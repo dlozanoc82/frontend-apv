@@ -1,7 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AuthLayout from "./layout/AuthLayout";
+import Login from "./pages/Login";
 
+//Component 
 function App() {
     return (
-        <h1 className="font-bold text-2xl">Hola Vite</h1>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<AuthLayout />}>
+                    <Route index element={<Login />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     )
 }
 
