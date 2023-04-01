@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Registrar from "./pages/Registrar";
 import ConfirmarCuenta from "./pages/ConfirmarCuenta";
 import ResetPassword from "./pages/ResetPassword";
-import NuevoPassword from "./pages/nuevoPassword";
+import NuevoPassword from "./pages/NuevoPassword";
 
 //Component 
 function App() {
