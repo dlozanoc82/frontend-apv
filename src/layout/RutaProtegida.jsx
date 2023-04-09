@@ -14,7 +14,11 @@ const RutaProtegida = () => {
     return (
         <>
             <Header/>
-                {auth?._id ? <Outlet /> : <Navigate to="/" />}
+                {auth?._id ? (
+                        <main className="container mx-auto mt-10">
+                            <Outlet />
+                        </main>
+                    ) : <Navigate to="/" />}
             <Footer/>
         </>
     )

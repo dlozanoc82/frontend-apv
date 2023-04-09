@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <header className="p-10 bg-indigo-600 flex justify-between items-center">
+            <header className="p-10 bg-indigo-600 flex flex-col md:flex-row justify-between items-center">
                 <div className="container mx-auto">
-                    <h1 className="font-bold text-2xl text-indigo-200">Administrador de Pacientes de <span className="text-white font-black"> Veterinaria</span> </h1>
+                    <h1 className="font-bold text-2xl text-indigo-200 text-center md:text-left">Administrador de Pacientes de <span className="text-white font-black"> Veterinaria</span> </h1>
                 </div>
-                <nav className="flex gap-5">
+                <nav className="flex flex-col items-center md:flex-row gap-5 mt-5 md:mt-0">
                     <Link to="/admin" className="text-white uppercase font-bold  text-sm">Pacientes</Link>
                     <Link to="/admin" className="text-white uppercase font-bold  text-sm">Perfil</Link>
                     <button
