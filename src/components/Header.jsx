@@ -13,7 +13,7 @@ const Header = () => {
                 </div>
                 <nav className="flex flex-col items-center md:flex-row gap-5 mt-5 md:mt-0">
                     <Link to="/admin" className="text-white uppercase font-bold  text-sm">Pacientes</Link>
-                    <Link to="/admin" className="text-white uppercase font-bold  text-sm">Perfil</Link>
+                    <Link to="/perfil" className="text-white uppercase font-bold  text-sm">Perfil</Link>
                     <button
                         type="button"
                         className="text-white text-sm uppercase font-bold"
