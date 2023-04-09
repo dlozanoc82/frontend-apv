@@ -37,15 +37,20 @@ const AuthProvider = ({children}) => {
 
         autenticarUsuario();
 
-    }, [])
+    }, []);
     
+    const cerrarSesion = () => {
+        localStorage.removeItem('apv_token_practice');
+        setAuth({});
+    }
 
     return (
         <AuthContext.Provider
             value={{
                 auth, 
                 setAuth,
-                cargando
+                cargando,
+                cerrarSesion
             }}
         >
             {children}
