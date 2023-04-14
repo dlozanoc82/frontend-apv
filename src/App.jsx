@@ -7,6 +7,9 @@ import ConfirmarCuenta from "./pages/ConfirmarCuenta";
 import ResetPassword from "./pages/ResetPassword";
 import NuevoPassword from "./pages/NuevoPassword";
 import AdministrarPacientes from "./pages/AdministrarPacientes";
+import EditarPerfil from "./pages/EditarPerfil";
+import CambiarPassword from "./pages/CambiarPassword";
+
 
 import { AuthProvider } from "./context/AuthProvider";
 import { PacientesProvider } from "./context/PacientesProvider";
@@ -27,7 +30,9 @@ function App() {
                         </Route>
 
                         <Route path="/admin"  element={<RutaProtegida/>}>
-                            <Route index element={<AdministrarPacientes/>}></Route>
+                            <Route index element={<AdministrarPacientes/>} />
+                            <Route path="perfil" element={<EditarPerfil/>} />
+                            <Route path="cambiar-password" element={<CambiarPassword />} />
                         </Route>
                     </Routes>
                 </PacientesProvider>
