@@ -26,7 +26,7 @@ const Formulario = () => {
             setId(paciente._id)
         }
 
-        console.log('Render o cambio paciente');
+        // console.log('Render o cambio paciente');
     }, [paciente])
     
 

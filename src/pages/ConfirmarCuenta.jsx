@@ -20,13 +20,13 @@ const ConfirmarCuenta = () => {
                 const {data} = await clienteAxios.get(url);
                 setCuentaConfirmada(true);
                 
-                console.log('Confirmado');
+                // console.log('Confirmado');
                 setAlerta({
                     msg: data.msg,
                 });
 
             } catch (error) {
-                console.log('Entra al error');
+                // console.log('Entra al error');
                 console.log(error);
                 setAlerta({
                     msg: error.response.data.msg,

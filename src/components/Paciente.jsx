@@ -6,7 +6,7 @@ const Paciente = ({paciente}) => {
 
     const {email, fechaDeAlta, nombre, propietario, sintomas, _id} = paciente;
 
-    console.log(fechaDeAlta);
+    // console.log(fechaDeAlta);
 
     const formatearFecha = (fecha) => {
         const nuevaFecha = new Date(fecha);

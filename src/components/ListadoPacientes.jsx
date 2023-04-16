@@ -4,7 +4,7 @@ import Paciente from "./Paciente";
 const ListadoPacientes = () => {
 
     const { pacientes } = usePacientes();
-    console.log(pacientes);
+    // console.log(pacientes);
 
     return (
         <>
