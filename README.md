@@ -3,6 +3,10 @@ APV es una aplicación web que permite a los veterinarios administrar los pacien
 
 El front end de la aplicación está construido con React, Tailwind y vite. Se utiliza Axios para enviar y recibir las peticiones al servidor.
 
+## Usuario de Pruebas
+* correo: `correo@correo.com`
+* contraseña: password
+
 ## Instalación y configuración
 
 1. Clona el repositorio a tu máquina local.
